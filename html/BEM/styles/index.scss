@@ -1,0 +1,53 @@
+@import 'navigation.scss';
+@import 'products';
+@import 'breakpoints.scss';
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    color:#030303;
+}
+h1{
+    font-family: Unica One,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 1.875em;
+    
+}
+body{
+    width: 100vw;
+    display: flex;
+    padding: 0 10px;
+    
+}
+select{
+    font-weight: 700;
+}
+body,
+input,
+textarea,
+button,
+select {
+  font-size: 16px;
+  font-family: Karla, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.375;
+  background-color: #f7f7f7;
+}
+label{
+    cursor: pointer;
+}
+.page-wrap {
+
+    
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    
+}

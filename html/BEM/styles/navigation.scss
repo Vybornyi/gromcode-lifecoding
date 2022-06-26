@@ -1,0 +1,62 @@
+@import 'breakpoints.scss';
+.navigation {
+  width: 100%;
+  margin-bottom: 40px;
+  @include large-screen {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+  }
+  & .navigation__title {
+    font-size: 1.875em;
+    margin-top: 40px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include large-screen {
+      font-size: 2.25em;
+    }
+  }
+  & .navigation__container {
+    margin-top: 20px;
+    text-align: center;
+    min-width: 300px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    @include large-screen {
+        margin: 0;
+      }
+
+    & .navigation__filter {
+      width: 150px;
+      @include large-screen {
+        text-align: left;
+        max-width: 150px;
+        height: 50px;
+      }
+      & .navigation__label {
+        height: 43px;
+        line-height: 43px;
+        font-size: 0.75em;
+        font-weight: 700;
+        color: #666;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        @include large-screen {
+        margin-left:4px;
+        margin-bottom: 0;
+      }
+      }
+      & .navigation__select {
+        height: 43px;
+        width: 150px;
+        font-weight: 700;
+        @include large-screen {
+        border:none;
+      }
+      }
+    }
+  }
+}
